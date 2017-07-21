@@ -15,6 +15,9 @@ public class Sprite {
     
         visible = true;
     }
+    public void reanimate() {
+    	visible = true;
+    }
     //remove sprite
     public void die() {
     

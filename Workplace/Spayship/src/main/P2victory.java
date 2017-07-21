@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 		
 		private final int P2VICTORY_Y = 230;
 		private final int P2VICTORY_X = 100;
-		private final String p2victory = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\ufowins.png";
+		private final String p2victory = "images/ufowins.png";
 	
 		public P2victory() {
 			initBg();

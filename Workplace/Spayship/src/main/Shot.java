@@ -5,7 +5,7 @@ import javax.swing.ImageIcon;
 
 public class Shot extends Sprite {
 	//img location
-    private final String shotImg = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\bullet.png";
+    private final String shotImg = "images/bullet.png";
     //spawn distance from player
     private final int H_SPACE = -6;
     private final int V_SPACE = 1;

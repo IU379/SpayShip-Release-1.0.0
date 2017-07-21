@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 		
 		private final int BG_Y = 0;
 		private final int BG_X = 0;
-		private final String bg = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\8bg.png";
+		private final String bg = "images/8bg.png";
 	
 		public Bg() {
 			initBg();

@@ -9,8 +9,8 @@ package main;
 	    public final int START_Y = 650;
 	    public final int START_X = 320;
 	    //image
-	    private final String playerImg = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\ship.png";
-	    private final String playerEx = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\shipex.png";
+	    private final String playerImg = "images/ship.png";
+	    private final String playerEx = "images/shipex.png";
 	    
 	    //hitbox
 	    private int width;

@@ -10,11 +10,11 @@ import javax.swing.ImageIcon;
 			public static int playerlives = 3;
 		
 			//lives sprite
-			private final String P4lives = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\4.png";
-			private final String P3lives = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\3.png";
-			private final String P2lives = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\2.png";
-			private final String P1lives = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\1.png";
-			private final String P0lives = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\0.png";
+			private final String P4lives = "images/4.png";
+			private final String P3lives = "images/3.png";
+			private final String P2lives = "images/2.png";
+			private final String P1lives = "images/1.png";
+			private final String P0lives = "images/0.png";
 
 
 		public PLives() {

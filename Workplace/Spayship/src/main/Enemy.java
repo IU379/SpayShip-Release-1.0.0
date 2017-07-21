@@ -10,8 +10,8 @@ import javax.swing.ImageIcon;
 		public final int ESTART_X = 320;
 		
 		//enemy sprite
-		private final String enemyImg = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\UFO.png";
-		private final String enemyEx = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\enemyex.png";
+		private final String enemyImg = "images/UFO.png";
+		private final String enemyEx = "images/enemyex.png";
 		private int ewidth;
 		
 		public Enemy() {

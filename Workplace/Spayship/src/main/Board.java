@@ -25,6 +25,7 @@ public class Board extends JPanel implements Runnable, Pins {
     private Bg bg;
     private P2victory p2victory;
     private P1victory p1victory;
+    private tie Tie;
     private static boolean rundrawcycle = true;
     static boolean ingame = true;
     restart r = new restart(); 
@@ -65,7 +66,8 @@ public class Board extends JPanel implements Runnable, Pins {
         bg = new Bg();
         p1victory = new P1victory();
         p2victory = new P2victory();
-        //put ingame
+        Tie = new tie();
+         //put ingame
         if (animator == null || !ingame) {
 
             animator = new Thread(this);
@@ -145,6 +147,12 @@ public class Board extends JPanel implements Runnable, Pins {
     		g.drawImage(p1victory.getImage(), p1victory.getX(), p1victory.getY(), this);
     	}
     }
+    public void drawtie(Graphics g) {
+    	if (Tie.isVisible()) {
+    		
+    		g.drawImage(Tie.getImage(), Tie.getX(), Tie.getY(), this);
+    	}
+    }
     @Override
     //makes bg
     public void paintComponent(Graphics g) {
@@ -177,9 +185,18 @@ public class Board extends JPanel implements Runnable, Pins {
             	
             }
             if (ELives.enemylives <= -1) {
+
             	drawP1victory(g);
             	ingame = false;
             	addKeyListener(r);
+            }
+            if (ELives.enemylives <= -1 && PLives.playerlives <= -1){
+            	drawtie(g);
+            	ingame = false;
+            	addKeyListener(r);
+            	p1victory.die();
+            	p2victory.die();
+            	
             }
         }
 
@@ -341,6 +358,8 @@ public class Board extends JPanel implements Runnable, Pins {
             		player.setY(player.START_Y);
             		enemy.setX(enemy.ESTART_X);
             		enemy.setY(enemy.ESTART_Y);
+                	p1victory.reanimate();
+                	p2victory.reanimate();
             		
             }
         }

@@ -5,7 +5,7 @@ import javax.swing.ImageIcon;
 
 public class EShot extends Sprite {
 	//enemy bullet sprite
-    private final String eshotImg = "C:\\Users\\IGMAdmin\\Desktop\\Workplace\\Spayship\\images\\ebullet.png";
+    private final String eshotImg = "images/ebullet.png";
     //spawn distance away from enemy
     private final int eH_SPACE = 0;
     private final int eV_SPACE = 1;
